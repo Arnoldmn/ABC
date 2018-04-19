@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.arnold.mna.abcinsurance.RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+
+
+            <LinearLayout
+                android:id="@+id/fullscreen_content_controls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_outline"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:baselineAligned="false"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="@string/register_here"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/imgLog"
+                    android:src="@drawable/ic_person"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:hint="@string/enter_email"
+                        android:padding="15dp"
+                        android:id="@+id/txtEmail"
+                        android:background="@drawable/input_outline"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:hint="@string/enter_first_name"
+                        android:padding="15dp"
+                        android:id="@+id/txtFname"
+                        android:background="@drawable/input_outline"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:hint="@string/enter_middle_name"
+                        android:padding="15dp"
+                        android:id="@+id/txtMname"
+                        android:background="@drawable/input_outline"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:hint="@string/enter_last_name"
+                        android:padding="15dp"
+                        android:id="@+id/txtLname"
+                        android:background="@drawable/input_outline"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/Nuphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_outline"
+                        android:hint="@string/_2565524256"
+                        android:padding="15dp"
+                        android:ems="10"
+                        android:inputType="phone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinGender"
+                        android:background="@drawable/input_outline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:hint="@string/enter_medical_condition"
+                        android:padding="15dp"
+                        android:id="@+id/txtMedCondition"
+                        android:background="@drawable/input_outline"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:hint="@string/enter_password"
+                        android:padding="15dp"
+                        android:id="@+id/txt_Password"
+                        android:background="@drawable/input_outline"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom"
+                    android:text="@string/register" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:background="#ffeeeade"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:src="@drawable/ic_attachment_black_24dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/policyNumber"
+        android:layout_alignTop="@id/thumbnail"
+        android:text="@string/policy_number"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#040404"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="RelativeOverlap" />
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:text="Policy property"
+        android:textColor="#03222e"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_below="@+id/listImage" />
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
